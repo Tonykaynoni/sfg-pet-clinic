@@ -2,15 +2,12 @@ package com.springframework.services;
 
 import java.util.Set;
 
-import com.springframework.model.Owner.Pet;
+import com.springframework.model.Pet;
 
-public enum PetService {
+
+public interface PetService extends CrudService<Pet, Long> {
 	
-	Pet findLastName(String lastName);
-	Pet findById(Long id);
-	Pet save(Pet owner);
-	
-	Set<Pet> findAll();
+
 	
 	
 }
